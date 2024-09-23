@@ -9,7 +9,7 @@ function Education() {
   };
 
   return (
-    <div className="educationContainer">
+    <div className={styles.educationContainer}>
       {/* Education and Volunteering Toggle Buttons */}
       <div className={`${styles.sectionButtons} ${styles.textCenter}`}>
         <h1
@@ -39,7 +39,7 @@ function Education() {
               <div className={styles.timelineIcon}></div>
               <div className={styles.timelineContent}>
                 <h3>G.C.E. Advanced Level | Physical Science Stream</h3>
-                <p>ST.Thomas College, Matara (2020)</p>
+                <p>ST. Thomas College, Matara (2020)</p>
               </div>
             </div>
             {/* Timeline Item 2 */}
@@ -47,7 +47,7 @@ function Education() {
               <div className={styles.timelineIcon}></div>
               <div className={styles.timelineContent}>
                 <h3>International English Language Testing System (5.5)</h3>
-                <p> British Council (2021)</p>
+                <p>British Council (2021)</p>
               </div>
             </div>
             {/* Timeline Item 3 */}
@@ -84,3 +84,4 @@ function Education() {
 }
 
 export default Education;
+

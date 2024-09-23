@@ -1,119 +1,123 @@
 .educationContainer {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  /* Section Toggle Buttons */
-  .sectionButtons {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-  }
-  
-  .textCenter {
-    text-align: center;
-  }
-  
-  .toggleButton {
-    position: relative;
-    padding: 0.5rem 1rem;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #0f1035;
-    cursor: pointer;
-  }
-  
-  .toggleButton:hover .underline {
-    width: 100%;
-  }
-  
-  /* Underline effect for buttons */
-  .underline {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #0f1035;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  /* Separator between buttons */
-  .separator {
-    padding: 0 1rem;
-    font-size: 2rem;
-    color: #0f1035;
-  }
+  padding: 2rem;
+  text-align: center; /* Center text */
+}
 
-  body[data-theme='dark'] .toggleButton {
-    color: #ffffff; /* White text for dark mode */
-  }
-  
-  body[data-theme='dark'] .underline {
-    background-color: #ffffff; /* White underline for dark mode */
-  }
-  
-  body[data-theme='dark'] .separator {
-    color: #ffffff; /* White separator for dark mode */
-  }
-  
-  /* Education Section */
-  .educationSection, .volunteeringSection {
-    margin-top: 2rem;
-  }
-  
-  .sectionTitle {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
-  
-  .timelineItem {
-    margin-bottom: 2rem;
-    position: relative;
-    padding-left: 1rem;
-  }
-  
-  .timelineIcon {
-    position: absolute;
-    top: 0;
-    left: -18px;
-    width: 16px;
-    height: 16px;
-    background-color: blue;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .timelineContent {
-    padding: 0.5rem;
-    margin-left: 1.5rem;
-  }
-  
-  .timelineContent h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .timelineContent p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  /* Media Queries */
-  @media (min-width: 800px) {
-    .toggleButton {
+/* Section Toggle Buttons */
+.sectionButtons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.textCenter {
+  text-align: center; /* Ensure text is centered */
+}
+
+.toggleButton {
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0f1035;
+  cursor: pointer;
+}
+
+.toggleButton:hover .underline {
+  width: 100%;
+}
+
+/* Underline effect for buttons */
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0f1035;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Separator between buttons */
+.separator {
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #0f1035;
+}
+
+body[data-theme='dark'] .toggleButton {
+  color: #ffffff; /* White text for dark mode */
+}
+
+body[data-theme='dark'] .underline {
+  background-color: #ffffff; /* White underline for dark mode */
+}
+
+body[data-theme='dark'] .separator {
+  color: #ffffff; /* White separator for dark mode */
+}
+
+/* Education Section */
+.educationSection,
+.volunteeringSection {
+  margin-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 0; /* Remove left padding to center items */
+  margin: 0 auto; /* Center the timeline */
+  display: inline-block; /* Center the block */
+}
+
+.timelineItem {
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 2rem; /* Keep left padding for content */
+}
+
+.timelineIcon {
+  position: absolute;
+  top: 0;
+  left: -20px; /* Adjust for centering */
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timelineContent {
+  padding: 0.5rem;
+  margin-left: 2rem; /* Space from icon */
+}
+
+.timelineContent h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timelineContent p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media Queries */
+@media (min-width: 800px) {
+  .toggleButton {
       font-size: 3rem;
-    }
   }
+}
+
 
  
   
