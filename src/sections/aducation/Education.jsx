@@ -71,8 +71,8 @@ function Education() {
             <div className={styles.timelineItem}>
               <div className={styles.timelineIcon}></div>
               <div className={styles.timelineContent}>
-                <h3>Pearl Hack 2.0 | Design Team Member</h3>
-                <p>IEEE WIE Student Branch Affinity Group (2024)</p>
+                <h3>LetMeHack 3.0 | Program Team Member</h3>
+                <p>Society of Computer Science of SUSL</p>
               </div>
             </div>
             {/* Add more volunteering items as necessary */}

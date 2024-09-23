@@ -12,11 +12,11 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          link="https://github.com/sithum110/mini_project"
+          h3="CoLive"
+          p="House_Sharing App"
         />
-        <ProjectCard
+        {/* <ProjectCard
           src={freshBurger}
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Fresh Burger"
@@ -33,7 +33,7 @@ function Projects() {
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="FitLift"
           p="Fitness App"
-        />
+        /> */}
       </div>
     </section>
   );
