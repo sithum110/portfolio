@@ -8,6 +8,8 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
+import midiumLight from '../../assets/midium-light.svg';
+import midiumDark from '../../assets/midium-dark.svg';
 import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
@@ -18,6 +20,8 @@ function Hero() {
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const midiumIcon = theme === 'light'? midiumLight : midiumDark;
+
 
   return (
     <section id="hero" className={styles.container}>
@@ -50,6 +54,9 @@ function Hero() {
           </a>
           <a href="https://www.linkedin.com/in/sithum-wijesinghe-540505248/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
+          </a>
+          <a href="https://medium.com/@sithumwijesinghe59" target="_blank">
+            <img src={midiumIcon} alt="Midium icon" />
           </a>
         </span>
         <p className={styles.description}>
