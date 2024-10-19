@@ -53,7 +53,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern web apps for .
+        
+        Hello there! 👋 Im Sithum Wijesinghe, and Im on a dynamic journey as an undergraduate student majoring in Information Systems. With a passion for technology and a zest for continuous learning, Im ready to take the IT world by storm
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>

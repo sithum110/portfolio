@@ -9,7 +9,7 @@ function Education() {
   };
 
   return (
-    <div className={styles.educationContainer}>
+    <div  id="container" className={styles.educationContainer}>
       {/* Education and Volunteering Toggle Buttons */}
       <div className={`${styles.sectionButtons} ${styles.textCenter}`}>
         <h1
@@ -36,7 +36,7 @@ function Education() {
           <div className={styles.timeline}>
             {/* Timeline Item 1 */}
             <div className={styles.timelineItem}>
-              <div className={styles.timelineIcon}></div>
+              
               <div className={styles.timelineContent}>
                 <h3>G.C.E. Advanced Level | Physical Science Stream</h3>
                 <p>ST. Thomas College, Matara (2020)</p>
@@ -44,7 +44,7 @@ function Education() {
             </div>
             {/* Timeline Item 2 */}
             <div className={styles.timelineItem}>
-              <div className={styles.timelineIcon}></div>
+             
               <div className={styles.timelineContent}>
                 <h3>International English Language Testing System (5.5)</h3>
                 <p>British Council (2021)</p>
@@ -52,7 +52,7 @@ function Education() {
             </div>
             {/* Timeline Item 3 */}
             <div className={styles.timelineItem}>
-              <div className={styles.timelineIcon}></div>
+              
               <div className={styles.timelineContent}>
                 <h3>BSc (Hons) in Computing & Information Systems</h3>
                 <p>Sabaragamuwa University of Sri Lanka (2022 - Present)</p>
@@ -69,7 +69,7 @@ function Education() {
           <div className={styles.timeline}>
             {/* Timeline Item for Volunteering */}
             <div className={styles.timelineItem}>
-              <div className={styles.timelineIcon}></div>
+              
               <div className={styles.timelineContent}>
                 <h3>LetMeHack 3.0 | Program Team Member</h3>
                 <p>Society of Computer Science of SUSL</p>

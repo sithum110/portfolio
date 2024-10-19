@@ -1,5 +1,15 @@
+/* General container styling for mobile-first */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all items */
+  text-align: center; /* Center text */
+  padding: 1rem; /* Optional: Add padding if needed */
+}
+
+/* Specific section styling for mobile */
 .educationContainer {
-  padding: 2rem;
+  padding: 1.5rem; /* Reduce padding for smaller screens */
   text-align: center; /* Center text */
 }
 
@@ -7,17 +17,20 @@
 .sectionButtons {
   display: flex;
   justify-content: center;
+  flex-direction: column; /* Stack buttons on top of each other for mobile */
   padding: 1rem 0;
 }
 
+/* General text centering */
 .textCenter {
   text-align: center; /* Ensure text is centered */
 }
 
+/* Toggle Button Styling */
 .toggleButton {
   position: relative;
-  padding: 0.5rem 1rem;
-  font-size: 2rem;
+  padding: 0.5rem 0.75rem; /* Reduce padding for smaller screens */
+  font-size: 1.5rem; /* Smaller font size for phones */
   font-weight: 600;
   color: #0f1035;
   cursor: pointer;
@@ -40,11 +53,12 @@
 
 /* Separator between buttons */
 .separator {
-  padding: 0 1rem;
-  font-size: 2rem;
+  padding: 0.5rem 0; /* Adjust padding for smaller screens */
+  font-size: 1.5rem; /* Reduce font size */
   color: #0f1035;
 }
 
+/* Dark mode adjustments */
 body[data-theme='dark'] .toggleButton {
   color: #ffffff; /* White text for dark mode */
 }
@@ -57,16 +71,16 @@ body[data-theme='dark'] .separator {
   color: #ffffff; /* White separator for dark mode */
 }
 
-/* Education Section */
+/* Education and Volunteering Sections */
 .educationSection,
 .volunteeringSection {
   margin-top: 2rem;
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Reduce title size for mobile */
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Adjust margin */
 }
 
 .timeline {
@@ -85,9 +99,9 @@ body[data-theme='dark'] .separator {
 .timelineIcon {
   position: absolute;
   top: 0;
-  left: -20px; /* Adjust for centering */
-  width: 16px;
-  height: 16px;
+  left: -15px; /* Adjust for smaller screens */
+  width: 14px;
+  height: 14px;
   background-color: blue;
   border-radius: 50%;
   display: flex;
@@ -101,22 +115,55 @@ body[data-theme='dark'] .separator {
 }
 
 .timelineContent h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem; /* Slightly smaller font for mobile */
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .timelineContent p {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduce paragraph size for better readability */
   color: #555;
 }
 
-/* Media Queries */
+/* Media Queries for larger screens */
 @media (min-width: 800px) {
+  .container {
+      flex-direction: row; /* Align items in a row on larger screens */
+      justify-content: space-between;
+  }
+
+  .sectionButtons {
+      flex-direction: row; /* Side by side for larger screens */
+  }
+
   .toggleButton {
       font-size: 3rem;
+      padding: 0.5rem 1.5rem; /* Increase padding for larger screens */
+  }
+
+  .separator {
+      font-size: 2rem;
+  }
+
+  .sectionTitle {
+      font-size: 2.5rem;
+  }
+
+  .timelineIcon {
+      left: -20px;
+      width: 16px;
+      height: 16px;
+  }
+
+  .timelineContent h3 {
+      font-size: 1.5rem;
+  }
+
+  .timelineContent p {
+      font-size: 1rem;
   }
 }
+
 
 
  
