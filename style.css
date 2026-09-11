@@ -1103,6 +1103,91 @@ section {
   transform: translateX(4px);
 }
 
+/* Feature Highlights in Project Card */
+.project-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0.25rem 0 1.25rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+}
+
+.project-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.project-feature-item i {
+  color: var(--cyan);
+  font-size: 0.7rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.project-feature-item strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Button Group for Projects with multiple actions */
+.project-btn-group {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.project-btn-group .project-live-btn {
+  margin-top: 0;
+  flex: 1;
+}
+
+.project-vercel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 11px 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  letter-spacing: 0.2px;
+  flex-shrink: 0;
+}
+
+.project-vercel-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 480px) {
+  .project-btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .project-btn-group .project-live-btn,
+  .project-btn-group .project-vercel-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
 /* ===== CERTIFICATES ===== */
 #certificates {
   padding: 100px 0;
