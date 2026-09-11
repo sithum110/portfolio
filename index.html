@@ -350,7 +350,11 @@
         <p class="section-subtitle">A showcase of my most impactful work</p>
       </div>
 
-      <div class="projects-grid">
+      <!-- Projects Pagination -->
+      <div class="projects-pagination-wrapper">
+        <!-- Page 1 -->
+        <div class="projects-page" id="projects-page-1">
+        <div class="projects-grid">
 
         <!-- Project 1: vProfile -->
         <div class="project-card reveal delay-1">
@@ -365,7 +369,7 @@
           </div>
           <span class="project-year">2026</span>
           <h3 class="project-title">vProfile Multi-Tier Web Architecture</h3>
-          <span class="project-type-badge">⚙️ Infrastructure & Automation</span>
+          <span class="project-type-badge">⚙️ Infrastructure &amp; Automation</span>
           <p class="project-desc">
             Executed a manual end-to-end setup of a 5-tier stack (Nginx, Tomcat, RabbitMQ, Memcached, MySQL)
             to master infrastructure dependencies, followed by developing Bash scripts that automated the entire
@@ -431,7 +435,7 @@
           <p class="project-desc">
             Developed a full-stack web application to match users with compatible roommates based on
             preferences. Implemented dynamic forms for easy user interaction and optimized database queries.
-            Contributed frontend & backend pages using Angular and trained the AI model for the
+            Contributed frontend &amp; backend pages using Angular and trained the AI model for the
             preference-matching algorithm.
           </p>
           <div class="tech-stack">
@@ -443,11 +447,23 @@
           </div>
         </div>
 
+        </div><!-- /projects-grid page 1 -->
+        </div><!-- /projects-page-1 -->
+
+        <!-- Page 2 -->
+        <div class="projects-page hidden-page" id="projects-page-2">
+        <div class="projects-grid projects-grid-single">
+
         <!-- Project 4: Restaurant -->
-        <div class="project-card reveal delay-4">
+        <div class="project-card reveal delay-1">
           <div class="project-header">
             <div class="project-icon">🍽️</div>
-            <div class="project-links"></div>
+            <div class="project-links">
+              <a href="https://astronomia-luxe-taupe.vercel.app/" target="_blank" rel="noopener"
+                 class="project-link" id="proj4-live" title="Live Site">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
           <span class="project-year">2025</span>
           <h3 class="project-title">Restaurant Website</h3>
@@ -463,9 +479,24 @@
             <span class="tech-tag">Express.js</span>
             <span class="tech-tag">MongoDB</span>
           </div>
+          <a href="https://astronomia-luxe-taupe.vercel.app/" target="_blank" rel="noopener"
+             class="project-live-btn" id="proj4-live-btn">
+            <i class="fas fa-globe"></i>
+            Visit Live Site
+            <i class="fas fa-arrow-right project-live-arrow"></i>
+          </a>
         </div>
 
-      </div>
+        </div><!-- /projects-grid page 2 -->
+        </div><!-- /projects-page-2 -->
+
+        <!-- Pagination Controls -->
+        <div class="projects-pagination" id="projects-pagination">
+          <button class="page-btn active" id="page-btn-1" onclick="showProjectsPage(1)" aria-label="Page 1">1</button>
+          <button class="page-btn" id="page-btn-2" onclick="showProjectsPage(2)" aria-label="Page 2">2</button>
+        </div>
+
+      </div><!-- /projects-pagination-wrapper -->
     </div>
   </section>
 

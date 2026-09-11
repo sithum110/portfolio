@@ -318,3 +318,41 @@ floatingCvBtn.addEventListener('click', () => {
     floatingCvBtn.style.background = '';
   }, 2500);
 });
+
+// ===== Projects Pagination =====
+function showProjectsPage(pageNum) {
+  // Hide all pages
+  document.querySelectorAll('.projects-page').forEach(page => {
+    page.classList.add('hidden-page');
+  });
+
+  // Show the selected page
+  const targetPage = document.getElementById('projects-page-' + pageNum);
+  if (targetPage) {
+    targetPage.classList.remove('hidden-page');
+  }
+
+  // Update active button state
+  document.querySelectorAll('.page-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  const activeBtn = document.getElementById('page-btn-' + pageNum);
+  if (activeBtn) {
+    activeBtn.classList.add('active');
+  }
+
+  // Re-trigger reveal animations for cards in the new page
+  const newCards = targetPage ? targetPage.querySelectorAll('.reveal, .reveal-left, .reveal-right') : [];
+  newCards.forEach(el => {
+    el.classList.remove('visible');
+    setTimeout(() => {
+      el.classList.add('visible');
+    }, 50);
+  });
+
+  // Smooth scroll to projects section top
+  const projectsSection = document.getElementById('projects');
+  if (projectsSection) {
+    projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}

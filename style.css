@@ -1894,3 +1894,102 @@ footer {
   }
   .floating-wa-btn span { display: none; }
 }
+
+/* ===== Projects Pagination ===== */
+.projects-pagination-wrapper {
+  width: 100%;
+}
+
+/* Hide pages */
+.projects-page {
+  display: block;
+}
+.projects-page.hidden-page {
+  display: none;
+}
+
+/* Single card centered on page 2 */
+.projects-grid-single {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Pagination buttons container */
+.projects-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 3rem;
+  padding-top: 0.5rem;
+}
+
+/* Individual page button */
+.page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: #13131f;
+  color: #a0a0c0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.page-btn span { position: relative; z-index: 1; }
+
+.page-btn:hover {
+  border-color: #6c63ff;
+  color: #f0f0f8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(108, 99, 255, 0.25);
+}
+
+.page-btn:hover::before {
+  opacity: 0.12;
+}
+
+.page-btn.active {
+  background: linear-gradient(135deg, #6c63ff, #00d4ff);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.45);
+  transform: translateY(-1px);
+}
+
+.page-btn.active::before {
+  opacity: 0;
+}
+
+.page-btn:focus-visible {
+  outline: 2px solid #6c63ff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .page-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+}
