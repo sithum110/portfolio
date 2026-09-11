@@ -1063,6 +1063,41 @@ section {
   font-weight: 500;
 }
 
+/* ===== Live Site Button ===== */
+.project-live-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1.25rem;
+  padding: 11px 20px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(108,99,255,0.1));
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  letter-spacing: 0.2px;
+}
+
+.project-live-btn:hover {
+  background: linear-gradient(135deg, rgba(0,212,255,0.2), rgba(108,99,255,0.15));
+  border-color: var(--cyan);
+  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.project-live-arrow {
+  font-size: 0.78rem;
+  transition: transform 0.3s ease;
+}
+
+.project-live-btn:hover .project-live-arrow {
+  transform: translateX(4px);
+}
+
 /* ===== CERTIFICATES ===== */
 #certificates {
   padding: 100px 0;
